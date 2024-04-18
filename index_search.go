@@ -96,6 +96,9 @@ func searchPostRequestParams(query string, request *SearchRequest) map[string]in
 	if request.ShowRankingScore {
 		params["showRankingScore"] = request.ShowRankingScore
 	}
+	if request.ShowRankingScoreDetails {
+		params["showRankingScoreDetails"] = request.ShowRankingScoreDetails
+	}
 	if request.Filter != nil {
 		params["filter"] = request.Filter
 	}
